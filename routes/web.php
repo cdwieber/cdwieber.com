@@ -30,3 +30,4 @@ Route::get('/projects/{slug}');
 Route::get('/resume', 'ResumeController@index');
 Route::get('/about', 'AboutController@index');
 Route::get('/contact', 'ContactController@index');
+    Route::post('/contact', 'ContactController@sendMail');

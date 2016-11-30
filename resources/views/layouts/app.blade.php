@@ -39,19 +39,16 @@
                 <a href="/">+ Home</a>
             </li>
             <li>
-                <a href="#">+ Resume/CV</a>
+                <a href="/resume">+ Resume/CV</a>
             </li>
             <li>
-                <a href="#">+ Projects</a>
+                <a href="/projects">+ Projects</a>
             </li>
             <li>
-                <a href="#">+ About</a>
+                <a href="/blog">+ Blog</a>
             </li>
             <li>
-                <a href="#">+ Blog</a>
-            </li>
-            <li>
-                <a href="#">+ Contact</a>
+                <a href="/contact">+ Contact</a>
             </li>
             <li>
                 <a href="/login">+ Client Login</a>

@@ -7,13 +7,13 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 class ResumeViewTest extends TestCase
 {
     /**
-     * A basic functional test example.
+     * A test to ensure the Resume page displays correctly
      *
      * @return void
      */
     public function testResumePageShows()
     {
         $this->visit('/resume')
-            ->see('Christopher Wieber');
+            ->see('Christopher');
     }
 }

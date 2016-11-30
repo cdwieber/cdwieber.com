@@ -1,7 +1,6 @@
-@extends('layouts.app)
+@extends('layouts.app')
 
 @section('content')
-
     <style type="text/css" id="static">html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
         body{line-height:1;background:#fff;text-align:left;font-feature-settings:"liga" 0;-moz-font-feature-settings:"liga" off;}
         blockquote,q{quotes:none;}
@@ -116,21 +115,7 @@
     </div>
     <div id="SECTION_CNTC763156568" class="section SECTION_CNTC" style="padding-top:0px;">
         <div id="PARAGRAPH_763156568_1_494621715" class="paragraph PARAGRAPH_CNTC firstparagraph" style="padding-top:0px;">
-            <div class="address">
-                <div>
-                    <span class="field" dependency="STRT" id="763156568STRT1">2469B North Bremen St</span><span>,</span>
-                    <span class="spaced field" id="763156568CITY1">Milwaukee</span><span> </span>
-                    <span class="spaced field" id="763156568STAT1">WI</span><span> </span>
-                    <span class="spaced field" id="763156568ZIPC1">53212</span>
-                </div>
-                <div>
-                    <span class="field" id="763156568HPHN1"></span>
 
-                    <span>Cell: </span><span class="field" id="763156568CPHN1">2627209254</span>
-                    <span> - </span>
-                    <span class="field" id="763156568EMAI1">chris.wieber@gmail.com</span>
-                </div>
-            </div>
         </div>
     </div>
     <div id="SECTION_SUMM763156569" class="section" style="padding-top:0px;">
@@ -303,5 +288,4 @@
         </div>
     </div>
 </div>
-
 @endsection
