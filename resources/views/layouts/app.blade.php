@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <title>Chris Wieber - Web Developer</title>
 
     <!-- Ase pp BaCSS -->
     <link href="css/app.css" rel="stylesheet">
@@ -36,7 +36,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">+ Home</a>
+                <a href="/">+ Home</a>
             </li>
             <li>
                 <a href="#">+ Resume/CV</a>
@@ -53,6 +53,9 @@
             <li>
                 <a href="#">+ Contact</a>
             </li>
+            <li>
+                <a href="/login">+ Client Login</a>
+            </li>
         </ul>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -60,7 +63,7 @@
     <div id="page-content-wrapper">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-8">
 
                     @yield('content')
 

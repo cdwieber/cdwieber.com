@@ -13,7 +13,8 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        //Making this our homepage controller and disabling auth
+        //$this->middleware('auth');
     }
 
     /**
