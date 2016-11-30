@@ -34,6 +34,16 @@
     <!--
      Adjust the threadCount attribute's value to the number of CPUs
     -->
+
+    <target name="composer" description="Installing composer dependencies">
+        <exec executable="composer" failonerror="true">
+            <arg value="install" />
+            <arg value="--dev" />
+            <arg value="--prefer-dist" />
+            <arg value="--no-progress" />
+        </exec>
+    </target>
+
     <target name="static-analysis-parallel" description="Performs static analysis (executing the tools in parallel)">
         <parallel threadCount="2">
             <sequential>
