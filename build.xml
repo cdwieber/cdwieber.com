@@ -12,6 +12,8 @@
     <target name="full-build-parallel" depends="prepare,composer,static-analysis-parallel,phpunit,phpdox,-check-failure" description="Performs static analysis (executing the tools in parallel), runs the tests, and generates project documentation"/>
     <target name="quick-build" depends="prepare,composer,lint,phpunit-no-coverage" description="Performs a lint check and runs the tests (without generating code coverage reports)"/>
     <target name="static-analysis" depends="lint,phploc-ci,pdepend,phpmd-ci,phpcs-ci,phpcpd-ci" description="Performs static analysis"/>
+
+    <target name="basic-build" depends="prepare,composer,lint,phpunit,phpdox,-check-failure" description="Basic build target for Jenkins to run."/>
     <!--
      Adjust the threadCount attribute's value to the number of CPUs
     -->
