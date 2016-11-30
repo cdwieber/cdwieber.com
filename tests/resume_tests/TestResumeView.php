@@ -4,16 +4,16 @@ use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 
-class ExampleTest extends TestCase
+class ResumeViewTest extends TestCase
 {
     /**
      * A basic functional test example.
      *
      * @return void
      */
-    public function testBasicExample()
+    public function testResumePageShows()
     {
-        $this->visit('/')
-             ->see('Oh hi.');
+        $this->visit('/resume')
+            ->see('Christopher Wieber');
     }
 }
