@@ -52,6 +52,19 @@
         <mkdir dir="${basedir}/build/logs"/>
         <mkdir dir="${basedir}/build/pdepend"/>
         <mkdir dir="${basedir}/build/phpdox"/>
+        <!--copy laravel .env, generate key, and migrate db-->
+        <copy file="${basedir}/.env.jenkins" tofile="${basedir}/.env"/>
+        <exec executable="php">
+            <arg value="${basedir}/artisan"/>
+            <arg value="key:generate"/>
+        </exec>
+        <exec executable="touch">
+            <arg value="${basedir}/db/sqlite/db.sqlite"/>
+        </exec>
+        <exec executable="php">
+            <arg value="${basedir}/artisan"/>
+            <arg value="migrate"/>
+        </exec>
         <property name="prepare.done" value="true"/>
     </target>
     <target name="lint" unless="lint.done" description="Perform syntax check of sourcecode files">
