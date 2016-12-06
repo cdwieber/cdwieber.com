@@ -138,18 +138,18 @@
         </exec>
         <property name="phpcs.done" value="true"/>
     </target>
-    <target name="phpcs-ci" unless="phpcs.done" depends="prepare" description="Find coding standard violations using PHP_CodeSniffer and log result in XML format. Intended for usage within a continuous integration environment.">
-        <exec executable="${phpcs}" output="/dev/null" taskname="phpcs">
-            <arg value="--report=checkstyle"/>
-            <arg value="--report-file=${basedir}/build/logs/checkstyle.xml"/>
-            <arg value="--standard=PSR2"/>
-            <arg value="--extensions=php"/>
-            <arg value="--ignore=autoload.php"/>
-            <arg path="${basedir}"/>
-            <arg path="${basedir}/tests"/>
-        </exec>
-        <property name="phpcs.done" value="true"/>
-    </target>
+    <!--<target name="phpcs-ci" unless="phpcs.done" depends="prepare" description="Find coding standard violations using PHP_CodeSniffer and log result in XML format. Intended for usage within a continuous integration environment.">-->
+        <!--<exec executable="${phpcs}" output="/dev/null" taskname="phpcs">-->
+            <!--<arg value="&#45;&#45;report=checkstyle"/>-->
+            <!--<arg value="&#45;&#45;report-file=${basedir}/build/logs/checkstyle.xml"/>-->
+            <!--<arg value="&#45;&#45;standard=PSR2"/>-->
+            <!--<arg value="&#45;&#45;extensions=php"/>-->
+            <!--<arg value="&#45;&#45;ignore=autoload.php"/>-->
+            <!--<arg path="${basedir}"/>-->
+            <!--<arg path="${basedir}/tests"/>-->
+        <!--</exec>-->
+        <!--<property name="phpcs.done" value="true"/>-->
+    <!--</target>-->
     <target name="phpcpd" unless="phpcpd.done" description="Find duplicate code using PHPCPD and print human readable output. Intended for usage on the command line before committing.">
         <exec executable="${phpcpd}" taskname="phpcpd">
             <arg path="${basedir}"/>
